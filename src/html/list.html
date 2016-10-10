@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link href="../css/list_style.css" type="text/css" rel="stylesheet"  />
+		<script src="../js/jquery-1.12.0.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/list.jss"></script>
+		<script>
+			$(function(){
+				var $list_content=$(".list_content");
+				var $ul=$("<ul/>");
+				
+				$.ajaxSetup({
+					url:"../js/list_load.json",
+					success:function(res){
+						console.log(res);
+						
+						$.each(res,function(idx,item) {
+							var $li=$("<li/>");
+							var price=(item.price*item.off).toFixed(2);
+							var $big_img=$("<span/>");
+							var $small_img=$("<span/>");
+							var $nane=$("<span/>");
+							
+							$('<a/>').attr({href:"#"}).html('<img src="'+item.big_img+'"/>').addClass("big_img").appendTo($big_img).appendTo($li);
+
+							$('<a/>').attr({href:"#"}).html('<img src="'+item.small_img+'"/>').addClass("small_img").appendTo($small_img).appendTo($li);
+
+							$("<p/>").html("<span>￥"+price+"</span><del>&yen;"+item.price+"</del>").addClass("price").appendTo($li);
+							$("<p/>").html(item.title).addClass("title").appendTo($li);
+							$("<span/>").html(item.off+"折").addClass("off").appendTo($li);
+							$('<a/>').attr({href:"#"}).html(item.nane).addClass("nane_a").appendTo($nane);
+							$nane.addClass("nane").appendTo($li); 
+							
+						    $li.addClass("li").appendTo($ul);
+						});
+						$ul.addClass("ul").appendTo($list_content);
+					}
+					
+				});
+				$.ajax();
+//				$(window).on("scroll",function(){
+//					var scrollTop=$(window).scrollTop();
+//					if(scrollTop>=$(document).height()-$(window).height()-100){
+//						$.ajax();
+//
+//					}
+//				});
+//				
+			})
+			
+			
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<ul class="header_left">
+				<li class="header_left_1"><a href="#">银泰首页</a></li>
+				<li class="header_left_2"></li>
+				<li class="header_left_3"><a href="#">微信</a></li>
+				<li class="header_left_4"></li>
+				<li class="header_left_5"><a href="#">手机银泰</a></li>
+			</ul>
+			
+			<ul class="header_right">
+				<li class="header_right_1"><span>Hi,欢迎来到银泰网！</span><a href="#">登录</a><a href="#">注册</a></li>
+				<li class="header_right_2"></li>
+				<li class="header_right_3"><a href="#">我的订单</a>
+					
+				</li>
+				<li class="header_right_4"></li>
+				<li class="header_right_5"><a href="#">我的银泰</a><span></span></li>
+				<li class="header_right_6"></li>
+				<li class="header_right_7"><a href="#">银泰卡</a></li>
+				<li class="header_right_8"></li>
+				<li class="header_right_9"><a href="#">帮助中心</a></li>
+			</ul>
+			
+			<div class="wechat">
+				<p class="header_left_3"><span>微信</span></p>
+				<img src="../img/top/wechat.png" />
+			</div>
+			
+			<div class="appphone">
+				<p class="header_left_5"><span>手机银泰</span></p>
+				<img src="../img/top/appphone.png" />
+			</div>
+			
+					<ul class="mylist">
+						<li class="mylist_top">我的银泰</li>
+						<li>我的收藏</li>
+						<li>我的余额</li>
+						<li>我的银元</li>
+						<li>我的银泰卡</li>
+						<li>我的优惠卷</li>
+						<li>我的积分</li>
+					</ul>
+		</div>
+		
+		<div class="head_banner"></div>
+		
+		<div class="list_content">
+			<!--<ul>
+               <li>
+         		    <span class="big_img"><a href="#"><img src="../img/list/1.jpg" /></a></span>
+         		    <span class="small_img"><a href="#"><img src="../img/list/1(1).jpg" /><a href="#"><img src="../img/list/1(1).jpg" /></a></span>
+         		    <p class="price"><span class="price_red">￥2400</span><span>￥2400</span></p>
+         		    <p class="title">那沃新款牛皮手提包女士包包简约单肩包女春夏斜挎包小包包贝壳包N154371</p>
+         		    <span class="off">0.2</span>
+         		    <span class="nane"><a href="#">蒙特布鲁斯旗舰店</a></span>
+               </li>
+			</ul>-->
+			
+		</div>
+		
+		<div class="footer">
+	    	<ul class="footer_top">
+	    		<li><a href="#">关于银泰</a></li>
+	    		<li class="footer_top_1"></li>
+	    		<li><a href="#">帮助中心</a></li>
+	    		<li class="footer_top_1"></li>
+	    		<li><a href="#">退换货政策</a></li>
+	    		<li class="footer_top_1"></li>
+	    		<li><a href="#">网站地址</a></li>
+	    		<li class="footer_top_1"></li>
+	    		<li><a href="#">代理合作</a></li>
+	    		<li class="footer_top_1"></li>
+	    		<li><a href="#">品牌招商</a></li>
+	    		<li class="footer_top_1"></li>
+	    		<li><a href="#">商务合作</a></li>
+	    		<li class="footer_top_1"></li>
+	    		<li><a href="#">网站联盟</a></li>
+	    		<li class="footer_top_1"></li>
+	    		<li><a href="#">联系我们</a></li>
+	    		<li class="footer_top_1"></li>
+	    		<li><a href="#">加入银泰</a></li>
+	    		<li class="footer_top_1"></li>
+	    		<li><a href="#">版权声明</a></li>
+	    		<li class="footer_top_1"></li>
+	    		<li><a href="#">法律声明</a></li>
+	    	</ul>
+	    	<p>浙ICP备10200233号&nbsp;京公网安备110105019085&nbsp; 增值电信业务经营许可证：浙B2-20110005</p>
+	    	<p>Yintai&nbsp;&copy;&nbsp;2016, 银泰电子商务有限公司</p>
+	    	
+	    	<ul class="footer_bottom">
+	    		<li class="footer_bottom_1"><a href="#"><img src="../img/bottom/yt-ntegrity.png" /></a></li>
+	    		<li class="footer_bottom_1"><a href="#"><img src="../img/bottom/cnnic.png" /></a></li>
+	    		<li class="footer_bottom_2"><a href="#"><img src="../img/bottom/commerce.gif" /></a></li>
+	    	</ul>
+		</div>
+	</body>
+</html>
