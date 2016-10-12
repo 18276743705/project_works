@@ -2,58 +2,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>列表页</title>
 		<link rel="stylesheet" href="../css/common.css" />
 		<link href="../css/list_style.css" type="text/css" rel="stylesheet"  />
 		<script src="../js/jquery-1.12.0.js"></script>
 		<script src="../js/common.js"></script>
-		<script src="../js/list.jss"></script>
-		<script>
-			$(function(){
-				var $list_content=$(".list_content");
-				var $ul=$("<ul/>");
-				
-				$.ajaxSetup({
-					url:"../js/list_load.json",
-					success:function(res){
-						console.log(res);
-						
-						$.each(res,function(idx,item) {
-							var $li=$("<li/>");
-							var price=(item.price*item.off).toFixed(2);
-							var $big_img=$("<span/>");
-							var $small_img=$("<span/>");
-							var $nane=$("<span/>");
-							
-							$('<a/>').attr({href:"#"}).html('<img src="'+item.big_img+'"/>').addClass("big_img").appendTo($big_img).appendTo($li);
+		<script type="text/javascript" src="../js/list.js" ></script>
 
-							$('<a/>').attr({href:"#"}).html('<img src="'+item.small_img+'"/>').addClass("small_img").appendTo($small_img).appendTo($li);
-
-							$("<p/>").html("<span>￥"+price+"</span><del>&yen;"+item.price+"</del>").addClass("price").appendTo($li);
-							$("<p/>").html(item.title).addClass("title").appendTo($li);
-							$("<span/>").html(item.off+"折").addClass("off").appendTo($li);
-							$('<a/>').attr({href:"#"}).html(item.nane).addClass("nane_a").appendTo($nane);
-							$nane.addClass("nane").appendTo($li); 
-							
-						    $li.addClass("li").appendTo($ul);
-						});
-						$ul.addClass("ul").appendTo($list_content);
-					}
-					
-				});
-				$.ajax();
-//				$(window).on("scroll",function(){
-//					var scrollTop=$(window).scrollTop();
-//					if(scrollTop>=$(document).height()-$(window).height()-100){
-//						$.ajax();
-//
-//					}
-//				});
-//				
-			})
-			
-			
-		</script>
 	</head>
 	<body>
 		<div class="header">
@@ -102,6 +57,146 @@
 		
 		<div class="head_banner"></div>
 		
+		<div class="head_nav">
+			<div class="head">
+			<div class="head_left">
+				<span class="logo"><img src="../img/top/head_5.jpg" /></span>
+				<div class="head_left_play">
+					<ul>
+						<li><img src="../img/top/head_7.jpg"></li>
+						<!--<li><img src="../img/top/head_6.jpg" /></li>-->
+					</ul>
+				</div>
+			</div>
+			
+			<div class="head_cen">
+				<form>
+					<input class="text_box"  type="text" placeholder="不奢不时髦" />
+					<span class="btn_box" ><img src="../img/top/head_2.png" /></span>
+				</form>
+				<ul>
+					<li><a href="#" class="col_red">奢品放肆美</li>
+					<li><a href="#">街头时尚搭</li>
+					<li><a href="#" class="col_red">New Balance满减</li>
+					<li><a href="#" class="col_red">玖熙秋冬新品抢先看</li>
+					<li><a href="#">家居全场4折封顶</li>
+				</ul>
+			</div>
+			
+			<div class="head_right">
+				<span class="hr_logo"><img src="../img/top/head_3.png" /></span>
+			    <p>购物袋<span class="car_munber"></span>件</p>
+			    <span class="hr_logo2"><img src="../img/top/car.png" /></span>
+			</div>
+		</div>
+		<!---------------------------head-------------------------------->
+		
+		<div class="nav">
+			<span class="nav_left">全部分类</span>
+			<ul class="nav_center">
+				<li><a href="#">银泰百货</a></li>
+				<li><a href="#">名品馆</a></li>
+				<li><a href="#">特卖</a></li>
+				<li><a href="#">海淘馆</a></li>
+			</ul>
+			<ul class="nav_right">
+				<li><a href="#">积分商城</li>
+				<li>|</li>
+				<li><a href="#">全部品牌</li>
+			</ul>
+			
+			<!--<div class="banner">
+				<ul class="banner_list">
+					<li><a href="#"></a><img src="../img/top/banner_1.jpg" /></li>
+					<li><a href="#"><img src="../img/top/banner_2.jpg" /></a></li>
+					<li><a href="#"><img src="../img/top/banner_3.jpg" /></a></li>
+					<li><a href="#"><img src="../img/top/banner_4.jpg" /></a></li>
+				</ul>
+			</div>		-->
+			<!-------------------一级菜单------------------------------------------>
+			<div class="nav_left_list">
+				<ul class="nav_left_list_left">
+					<li><span class="list_img"></span><span>名品</span><span class="list_line"></span><a href="#">秋尚新</a><span class="list_right"></span></li>
+					<li><span class="list_img"></span><span>女装</span><span class="list_line"></span><a href="#">秋季上新</a><span class="list_right"></span></li>
+		            <li><span class="list_img"></span><span>男装</span><span class="list_line"></span><a href="#">型男专场</a><span class="list_right"></span></li>		
+					<li><span class="list_img"></span><span>鞋靴</span><span class="list_line"></span><a href="#">时尚鞋品</a><span class="list_right"></span></li>			
+					<li><span class="list_img"></span><span>美妆</span><span class="list_line"></span><a href="#">护肤套装</a><span class="list_right"></span></li>				
+				    <li><span class="list_img"></span><span>箱包</span><span class="list_line"></span><a href="#">女神单肩</a><span class="list_right"></span></li>
+					<li><span class="list_img"></span><span>运动</span><span class="list_line"></span><a href="#">运动鞋服</a><span class="list_right"></span></li>
+		            <li><span class="list_img"></span><span>配饰</span><span class="list_line"></span><a href="#">黄金饰品</a><span class="list_right"></span></li>		
+					<li><span class="list_img"></span><span>婴音</span><span class="list_line"></span><a href="#">母婴</a><span class="list_right"></span></li>			
+					<li><span class="list_img"></span><span>内衣</span><span class="list_line"></span><a href="#">舒适内衣</a><span class="list_right"></span></li>			
+				</ul>
+			</div>
+			
+			<!------------------------------二级菜单------------------------------------->
+		    <div class="nav_2">
+		    	<div class="list_1">
+				<ul class="list_1_left">
+					<li><span><a href="#">男装</a></span><a href="">新品</a><a href="">衬衫</a><a href="">T恤</a><a href="">裤装</a><a href="">卫衣</a></li>
+					<li><span><a href="#">女装</a></span><a href="">新品</a><a href="">裙装</a><a href="">衬衫</a><a href="">裤装</a><a href="">T恤</a></li>
+					<li><span><a href="#">鞋靴</a></span><a href="">新品</a><a href="">女士单鞋</a><a href="">女士低/中跟鞋</a><a href="">男鞋</a><a href="">高跟鞋</a></li>
+					<li><span><a href="#">女包</a></span><a href="">新品</a><a href="">手提斜挎包</a><a href="">单肩包</a><a href="">钱包</a></li>
+					<li><span><a href="#">男包</a></span><a href="">新品</a><a href="">钱包</a><a href="">单肩包</a><a href="">手拿包</a><a href="">手提包</a></li>
+					<li><span><a href="#">海淘</a></span><a href="">保税</a><a href="">零食</a><a href="">美妆</a><a href="">婴音</a><a href="">女包</a><a href="">腰带</a><a href="">服装鞋靴</a><a href="">直邮</a><a href="">鞋靴</a><a href="">配饰</a><a href="">女装</a><a href="">箱包</a></li>
+					<li class="list_1_left_last"><span>婴音</span><a href="">童装</a><a href="">童鞋</a><a href="">婴音配饰</a></li>
+				</ul>
+				
+				<div class="list_1_right">
+					<span>品牌</span>
+					<ul>
+						<li><a href="#">BURBERRY</a></li>
+						<li><a href="#">FERRAGAMO</a></li>
+						<li><a href="#">GUCCI</a><a href="#">COACH </a></li>
+						<li><a href="#">ARMANI JEANS</a></li>
+						<li><a href="#">DIESEL</a><a href="#">VERSACE</a></li>
+						<li><a href="#">MAX&CO</a></li>
+						<li><a href="#">FRED PERRY</a></li>
+						<li><a href="#">CELINE</a></li>
+						<li><a href="#">SPORTMAX</a></li>
+						<li><a href="#">MAX MARA</a></li>
+						<li><a href="#">MICHAEL KORS</a></li>
+						<li><a href="#">ZEGNA</a><a href="#">FENDI</a></li>
+						<li><a href="#">EMPORIO ARMANI</a></li>
+						<li><a href="#">BALLY</a></li>
+						<li><a href="#">ALEXANDER MCQUEEN</a></li>
+				    </ul>
+				</div>	
+			</div>
+			
+			<div class="list_2">
+				<ul class="list_2_left">
+					<li><span><a href="#">热门搜索</a></span><a href="">商城同款</a><a href="">连衣裙</a><a href="">打底裤</a><a href="">风衣</a><a href="">衬衫</a><a href="">裤装</a><a href="">T恤</a></li>
+					<li><span><a href="#">流行元素</a></span><a href="">欧美风</a><a href="">英伦风</a><a href="">韩范</a><a href="">简约风</a><a href="">刺绣</a><a href="">休闲风</a><a href="">纯色</a><a href="">森女棉麻</a><a href="">绣花</a><a href="">蕾丝衬</a></li>
+					<li><span><a href="#">上装</a></span><a href="">针织衬</a><a href="">T恤</a><a href="">雪纺</a><a href="">衬衫</a><a href="">吊带/马甲</a><a href="">卫衣/绒衣</a><a href="">外套</a><a href="">风衣</a><a href="">小西装</a></li>
+					<li><span><a href="#">下装</a></span><a href="">牛仔裤</a><a href="">休闲裤</a><a href="">连衣裙</a><a href="">哈伦裤</a><a href="">西装裤</a><a href="">短裤</a><a href="">长裤</a><a href="">九分裤</a><a href="">七分裤</a><a href="">铅笔裤</a></li>
+					<li><span><a href="#">裙装</a></span><a href="">半身裙</a><a href="">长袖裙</a><a href="">牛仔裤</a><a href="">雪纺裙</a><a href="">连衣裙</a></li>
+					<li class="list_2_left_last"><span>女士内衣</span><a href="">文胸</a><a href="">底裤</a><a href="">家居服</a><a href="">束身衣</a><a href="">吊带/背心</a><a href="">袜品</a><a href="">泳衣</a></li>
+				</ul>
+				<div class="list_2_right">
+					<span>品牌</span>
+					<ul>
+						<li><a href="#">茵曼</a><a href="">苏安真</a><a href="">颜域</a></li>
+						<li><a href="#">莉莉的</a><a href="#">衣之纯</a><a href="#">年歌</a></li>
+						<li><a href="#">Miss Lisa</a><a href="#">XG</a></li>
+						<li><a href="#">BEAUTY SAID </a></li>
+						<li><a href="#">breadnbutter</a><a href="#">BRJ</a></li>
+						<li><a href="#">欧怀</a></li>
+						<li><a href="#">vanillachocolate</a></li>
+						<li><a href="#">Bees do</a><a href="#">CMYK</a></li>
+						<li><a href="#">初语</a><a href="#">axelledesoie</a></li>
+						<li><a href="#">贝瑞英格</a><a href="#">雨中邂逅</a></li>
+						<li><a href="#">B.Dcuk</a><a href="#">格子廊</a></li>
+						<li><a href="#">茵佳兰迪</a><a href="#">奈希雅</a></li>
+						<li><a href="#">INXX</a><a href="#">AG-STAR RAW</a></li>
+				    </ul>
+				</div>	
+			</div>
+		    </div>
+			
+		</div>
+		</div>
+		
 		<div class="list_content">
 			<!--<ul>
                <li>
@@ -115,6 +210,43 @@
 			</ul>-->
 			
 		</div>
+		
+		
+		<div class="foot">
+			
+			<ul class="foot_bottom">
+	    		<li class="foot_bottom_1">
+		    		<p><span class="phone"></span><span class="red">400-119-1111</span><span class="time">8:00-24:00</span></p>
+		    		<p><span class="email"></span><span class="emails">service@yintai.com</span></p>
+		    	</li>
+		    	<li class="class=foot_bottom_2">
+		    		<span class="foot_logo_1"><img src="../img/bottom/foot_2.png" /></span>
+		    		<div class="foot_bottom_right">
+			    		<b><span class="red">15天</span>无忧退换货</b>
+			    		<span class="foot_mation">为您提供优质售后服务</span>		    			
+		    		</div>
+		    	</li>
+		    	
+		    	<li class="foot_bottom_3">
+		    		<span class="foot_logo_2"><img src="../img/bottom/foot_3.png" /></span>
+		    		<div class="foot_bottom_right">
+			    		<b><span class="red">100%</span>正品保证</b>
+			    		<span class="foot_mation">品质护航 购物无忧</span>		    			
+		    		</div>
+		    	</li>
+		    	
+		    	<li class="foot_bottom_4">
+		    		<span class="foot_logo_3"><img src="../img/bottom/foot_4.png" /></span>
+		    		<div class="foot_bottom_right">
+		    			<b><span class="red">满199元</span>免运费</b>
+		    			<span class="foot_mation">为您提供便利物流</span>
+		    		</div>
+		    		
+		    	</li>
+	    	</ul>
+	   </div>
+		
+		
 		
 		<div class="footer">
 	    	<ul class="footer_top">

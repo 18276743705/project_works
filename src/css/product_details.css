@@ -1,0 +1,106 @@
+body{background: #eeeeee;position: relative;}
+.head_nav{background: white;}
+.foot_footer{background: white;}
+.product{overflow: hidden;height: auto;margin: 0px 59px 0px 59px;background: white;padding: 20px 0;}
+.prodout_top{overflow: hidden;background: #f4f4f4;padding-left: 20px;}
+.prodout_top li{float: left;margin-right: 10px;line-height: 46px;color: gray;}
+.prodout_top li a{color: gray;}
+.prodout_top li a:hover{color: #C91256;}
+.product_left{width: 340px;height: auto;overflow: hidden;float: left;margin-left: 50px;}
+.pro_bigimg img{width: 300px;height: 400px;}
+.pro_bigimg{position: relative;overflow: hidden;width: 340px;height: 400px;overflow: hidden;}
+.pro_bigimg li{position: absolute;top: 0;left: 20px;width: 300px;height: 400px;}
+.pro_bigimg_first{z-index: 1;}
+.pro_smallimg span{width: 20px;height: 65px;}
+.pro_smallimg{position: relative;overflow: hidden;height: 67px;margin-top: 10px;}
+.pro_smallimg .left_btn{background: url(../img/product_details/left.png) no-repeat center center;position: absolute;top: 0;left: 0;}
+.pro_smallimg .right_btn{background: url(../img/product_details/right.png) no-repeat center center;position: absolute;top: 0;right: 0;}
+.pro_smallimg ul{overflow: hidden;position: absolute;left: 20px;top: 0;}
+.pro_smallimg ul li{float: left;margin:0px 4px;border: 1px solid white;}
+.pro_smallimg ul li img{width: 65px;height: 65px;}
+.pro_smallimg ul li:hover{border: 1px solid gainsboro;}
+
+.product_cen{float: left;width: 480px;margin: 0 20px 0 60px;}
+.product_cen .title{font-size: 18px;}
+.product_cen .price{color: gray;font-size: 14px;overflow: hidden;margin-top: 28px;}
+.product_cen .price b{font-size: 24px;color: #C91256;float: left;}
+.product_cen .price .discount{line-height: 20px;width: 50px;text-align: center;background: #d4bd8a;color: white;margin-left: 4px;display: inline-block;margin-top: 4px;}
+.product_cen .price span{float: left;margin-top: 6px;}
+.del_price{font-size: 14px;color: gray;margin:10px 0px 34px 0px;}
+.del_price .del{display: inline-block;}
+
+.special_offer{padding: 8px 0px 6px 10px;overflow: hidden;background: #e6e6e6;margin-bottom: 24px;}
+.special_offer .spe{background: #D4BD8A;color: white;width: 46px;line-height: 20px;text-align: center;float: left;margin-right: 8px;}
+.special_offer p{line-height: 20px;color: gray;}
+.special_offer .daytime{display: inline-block;}
+
+.pro_color{overflow: hidden;}
+.pro_color span{font-size: 14px;color: gray;float: left;margin-right: 46px;}
+.pro_color ul{float: left;overflow: hidden;}
+.pro_color ul li{width: 60px;height: 40px;border: 1px solid #C91256;overflow: hidden;float: left;line-height: 40px;}
+.pro_color ul li img{width: 26px;height: 40px;float: left;margin-right: 4px;}
+
+.pro_size{overflow: hidden;margin-top: 10px;}
+.pro_size span{font-size: 14px;color: gray;float: left;margin-right: 46px;}
+.pro_size ul{float: left;overflow: hidden;}
+.pro_size ul li{overflow: hidden;border: 1px solid #C91256;overflow: hidden;line-height: 20px;padding: 0 10px;float: left;}
+.pro_size ul li span{ont-size: 14px;color: gray;float: left;}
+
+.pro_goods{overflow: hidden;margin-top: 14px;}
+.pro_goods li{float: left;margin-right: 10px;}
+.pro_goods_left{overflow: hidden;width: 90px;height: 40px;border: 1px solid gray;position: relative;}
+.pro_goods_left .pro_gnum{width: 49px;line-height: 40px;text-align: center;color: gray;border-right: 1px solid gray;font-size: 16px;font-weight: bold;}
+.pro_goods_left .pro_gleft{width: 40px;height: 20px;background: url(../img/product_details/6.png) no-repeat center center;position: absolute;top: 0;right: 0;}
+.pro_goods_left .pro_gright{width: 40px;height: 20px;background: url(../img/product_details/5.png) no-repeat center center;position: absolute;bottom: 0;right: 0;}
+.pro_goods_cen{width: 150px;height: 40px;border: 1px solid #C91256;background: #feeef3;color: #C91256;font-size: 20px;text-align: center;line-height: 40px;}
+.pro_goods_right{width: 150px;height: 40px;border: 1px solid #C91256;background: #C91256;}
+.pro_goods_right img{width: 20px;height: 20px;float: left;margin: 10px 4px 10px 10px;}
+.pro_goods_right a{height: 40px;text-align: center;line-height: 40px;color: white;font-size: 20px;}
+
+.pro_new{overflow: hidden;margin-top: 30px;background: #f7f3e8;}
+.pro_new li{float: left;color: gray;margin-left:10px ;line-height: 30px;}
+.pro_new .pro_new_left{width: 18px;height: 30px;background: url(../img/product_details/4.png) no-repeat center center;}
+
+.product_right{margin:10px 8px 0px 18px;overflow: hidden;height: 130px;width: 186px;border-bottom: 1px solid gray;border-top: 1px solid gray;position: relative;}
+.product_right img{float: right;position:absolute ;bottom: 30px;right: 38px;width: 84px;}
+.product_right span{color: gray;position: absolute;bottom: 14px;right: 38px;font-size: 14px;}
+
+.product_bottom{overflow: hidden;margin-top: 20px;}
+.product_bottom p{float: left;margin-top: 4px;}
+.product_bottom span{display: inline-block;}
+.product_bottom ul {overflow: hidden;margin-right: 10px;height: 22px;display: inline-block;}
+.product_bottom ul li{float: left;border: 1px solid white;height: 20px;margin-right: 10px;}
+.product_bottom ul .collect:hover{border: 1px solid #C91256;}
+.product_bottom ul li:hover{border: 1px solid gray;}
+.collect {line-height: 22px;padding: 0 6px;}
+.collect img{float:left;margin-top: 4px;}
+
+
+//放大镜
+.xzoom{position:relative;}
+.xzoom .xzoom-min{position:absolute;top:0;left:0;width:158px;height:158px;border:1px solid #e6e6e6;background-color:#e6e6e6;opacity: 0.5;}
+
+.xzoom-big{position:absolute;width:398px;height:398px;overflow:hidden;border: 1px solid gray;background: red;}
+.xzoom-big img{position:absolute;left:0;top:0;}
+//购物车弹出
+.pro_goodbox{display: none;position: absolute;overflow: hidden;z-index: 1;}
+.pro_car_top{height: 36px;background: #5f605b;width: 400px;position: relative;overflow: hidden;}
+.pro_car_top span{float: left;}
+.pro_car_top span{position: absolute;top: 6px;left: 24px;}
+.pro_car_top p{font-size: 14px;color: white;position: absolute;top: 10px;left: 60px;}
+.no_img{width:14px;height: 16px;position: absolute;top: 10px;right: 4px;}
+
+.pro_car_bot{overflow: hidden;font-size: 14px;position: relative;padding-top: 26px;height: 122px;width: 398px;background: white;border: 1px solid gainsboro;}
+.pro_car_bot .suess{position: absolute;left:40px ;}
+.pro_car_bot b{position: absolute;left: 94px}
+.pro_car_bot p{position: absolute;left: 94px;top: 54px;}
+.pro_car_bot p span{display: inline-block;}
+.pro_car_bot .go_car{padding: 6px 12px;background: #5f605b;position: absolute;left: 94px;bottom: 22px;border: 1px solid #5f605b;border-radius: 5px;}
+.pro_car_bot .go_car a{color: white;}
+.no_go a{font-size: 12px;}
+.car_money{color: #C91256;padding: 0 2px;}
+.car_munber{padding: 0 2px;}
+.no_go{font-size: 10px;padding: 4px 18px;background: gainsboro;position: absolute;right:120px;bottom: 22px;border: 1px solid gainsboro;border-radius: 5px;}
+.good_box_active{position: absolute;}
+
+

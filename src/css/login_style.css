@@ -1,0 +1,27 @@
+.login_top{width: 100%;background: white;overflow: hidden;padding-bottom: 20px;}
+.login_top .login_top_logo{float: left;margin-top: 22px;margin-left: 40px;}
+.login_top h3{color: #C91256;font-size: 22px;float: left;margin-top: 74px;}
+.login_box{width: 100%;background: gainsboro;overflow: hidden;padding: 60px 0px;}
+.login_box_img{float: left;margin-left: 40px;}
+.login_form{width: 320px;height: 460px;background: white;float: right;margin-right: 40px;}
+.login_form_top{width: 320px;height: 44px;font-size: 16px;text-align: center;line-height: 44px;background: #C91256;color: white;font-weight: bold;}
+.login{padding: 0px 20px;width: 280px;overflow: hidden;}
+.login_form_gin{float: right;margin: 19px 20px;color: gray;}
+.login_form_gin a{float: right;color: #C91256;}
+.login span{width: 280px;height: 24px;background: white;color: gray;line-height: 24px;overflow: hidden;}
+.username,.password,.passwords{border: none;width: 276px;height: 40px;border: 1px solid gray;border-radius: 2px;background: #eeeeee;color: grey;}
+.test{border: none;height: 40px;width: 106px;border: 1px solid gray;border-radius: 2px;background: #eeeeee;color: grey;float: left;}
+.test_number{height: 40px;width: 100px;float: left;text-align: center;line-height: 40px;font-size: 16px;color: #333333;}
+.test_btn{border: none;float: left;line-height: 40px;color: grey;margin-left: 4px;background: none;}
+.tests{overflow: hidden;display: none;}
+.tests span{float: none;}
+
+.text{border: none;height: 40px;width: 106px;border: 1px solid gray;border-radius: 2px;background: #eeeeee;color: grey;float: left;}
+.text_btn{border: none;float: left;line-height: 40px;color: grey;width: 120px;height: 40px;color: white;background: none;background:gray ;border: 1px solid gray;border-radius: 2px;margin-left: 10px;display: none;}
+.texts{overflow: hidden;}
+
+
+.checkbox{overflow: hidden;color: gray;}
+.checkbox input{float: left;}
+.checkbox a{display: inline-block;color: #C91256;}
+.login .btn{border: none;width: 280px;height: 40px;background: #C91256;color: white;font-size: 16px;text-align: center;line-height: 40px;margin-top: 20px;}

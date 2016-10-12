@@ -1,0 +1,27 @@
+body{background: #eeeeee;}
+.head_nav{background: white;}
+.foot_footer{background: white;}
+.list_content{overflow: hidden;margin-left: 59px;}
+.list_content{margin-top: 20px;}
+.list_content ul{overflow: hidden;}
+.list_content ul li{width: 190px;height: 420px;border: 1px solid white;padding: 15px;position: relative;float: left;margin: 0px 10px 10px 0px;background: white;}
+.big_img img{width: 190px;height: 275px;}
+.big_img {width: 190px;height: 275px;overflow: hidden;}
+.small_img img{width: 40px;height: 55px;}
+.small_img{margin-top: 10px;overflow: hidden;}
+.small_img a{display: inline-block;margin-right: 10px;border: 1px solid gainsboro;}
+.small_img a:hover{border: 1px solid #C91256;}
+.price{margin-top: 10px;}
+.price span{display: inline-block;margin-right: 20px;}
+.price span{color: #c91256;font-weight: bold;}
+.title{line-height: 20px;display: block;height: 40px;overflow: hidden;margin-top: 6px;}
+.off{display: none;}
+.nane{width: 190px;height: 30px;padding: 20px 15px 10px 15px;margin-top: 20px;display: none;position: absolute;bottom: -60px;left: -1px;z-index: 1;border: 1px solid #C91256;background: white; }
+.nane_a{width: 200px;height: 30px;line-height: 30px;text-align: center;color: white;background: #333333;}
+.list_content li:hover .nane{display: block;border-top: none;}
+.list_content li:hover{border: 1px solid #C91256;border-bottom: 1px solid white;}
+
+.nav_left_list{display: none;}
+.nav_show{display: block;z-index: 1;}
+
+
