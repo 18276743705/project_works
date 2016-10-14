@@ -104,4 +104,36 @@ body{background: #eeeeee;position: relative;}
 .no_go{font-size: 10px;padding: 4px 18px;background: gainsboro;position: absolute;right:120px;bottom: 22px;border: 1px solid gainsboro;border-radius: 5px;}
 .good_box_active{position: absolute;}
 
+.bottom{width: 1190px;margin: 0 auto;overflow: hidden;margin-top: 10px;}
+.pro_botoom{width: 988px;float: left;background: white;}
+.bottom_news{padding: 0 34px;}
+.pro_list{overflow: hidden;}
+.top_list{float: left;overflow: hidden;}
+.top_list li{float: left;color: white;line-height: 30px;width: 120px;text-align: center;margin-right: 1px;background: #999999;}
+.top_list .top_list_first{background: #b7ab91;}
+.top_list li:hover{background: #b7ab91;}
+.top_list2{overflow: hidden;line-height: 30px;color: white;float: right;background: #999999;width: 504px;}
+.top_list2 span{display: inline-block;}
+.top_list2 .ophone{float: right;line-height: 30px;color: white;width: 150px;text-align: center;}
+.top_list2 .car {float: right;width: 130px;background: #C91256;}
+.top_list2 .car a{color: white;font-size: 16px;line-height: 30px;margin-left: 16px;}
+.top_list2 .car img{display: inline-block;}
+.pro_mation{font-size: 22px;width: 90px;}
+.pro_infor{overflow: hidden;margin-top: 24px;background:  #eeeeee;padding-left: 24px;}
+.pro_infor li{float: left;line-height: 26px;margin-right: 165px;}
+.pro_img{font-size: 22px;margin-top: 30px;width: 90px;}
+.pro_imgs{overflow: hidden;}
+.pro_imgs li{float: left;}
+.pro_imgs li img{width: 460px;}
+.bottom_news span{height: 42px;border-bottom: 1px dashed  #eeeeee;}
+.bottom_right{width: 190px;float: right;background: white;}
+.bottom_right div{overflow: hidden;background: #999999;line-height: 30px;width: 166px;;color: white;padding: 0 10px 0 14px;}
+.bottom_right span{display: inline-block;}
+.bottom_right .change{float: right;}
+.bottom_right ul{padding: 0 20px;width: 150px;overflow: hidden;}
+.bottom_right ul li img{width: 150px;}
+.bottom_right ul li p{color: gray;}
+.bottom_right ul li {margin-bottom: 10px;}
+.bottom_right ul li b{color: #C91256;font-weight: 100;margin-left: 32px;}
+.bottom_right ul li b del{color: gray;margin-left: 22px;}
 

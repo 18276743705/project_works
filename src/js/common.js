@@ -1,5 +1,5 @@
 $(function() {
-	//微信
+	//微信下拉显示
 	$(".header_left_3").on("mouseenter", function() {
 		var wechat_left = $(".header_left_3").offset().left - 6;
 		$(".wechat").show().css({
@@ -21,7 +21,7 @@ $(function() {
 		$(".wechat").hide();
 	});
 
-	//二维码
+	//二维码下拉显示
 	$(".header_left_5").on("mouseenter", function() {
 			var appphone_left = $(".header_left_5").offset().left - 6;
 			$(".appphone").show().css({
@@ -70,16 +70,6 @@ $(function() {
 	}).on("mouseout", function() {
 		$(".mylist").hide();
 	});
-	//head
-	//		$(".head_left_play").pcarousel({
-	//					width:120,
-	//					height:76,
-	//					page:false,//是否显示页码
-	//					autoPlay:true,//是否自动轮播
-	//					type:'fade',//动画类型：水平滚动x, 垂直滚动y, 渐现效果fade
-	//					buttons:false,//是否显示前后按钮
-	//					speed:1000,//轮播图速度
-	//		});
 
 	//一级菜单经过效果
 	$(".nav_left_list").on("mouseenter", "li", function() {

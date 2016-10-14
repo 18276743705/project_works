@@ -8,11 +8,11 @@ onload = function() {
 	var otext_btn = document.getElementById("text_btn");
 	var obtn = document.getElementById("btn");
 	var ochecked = document.getElementById("checked");
-     
-
+    //用户帐号框得到焦点
 	oinput[0].onfocus = function() {
 		ospan[0].innerHTML = "手机号/E-mail用于登录和找回密码，请正确填写"
 	}
+	 //用户帐号框失去焦点
 	oinput[0].onblur = function() {
 		var username = this.value;
 		username = username.replace(/\s/gi, "");
@@ -21,7 +21,7 @@ onload = function() {
 			ospan[0].innerHTML = "请输入您的手机号/E-mail！"
 			ospan[0].style.color = "red"
 			oinput[0].style.border = "1px solid red"
-		} else if(/^1\d{10}$/.test(username)) {
+		} else if(/^1\d{10}$/.test(username)  || /[a-z0-9A-z_]{1,}@[a-z0-9A-z_]{1,}.com$/.test(username) ) {
 			ospan[0].innerHTML = "该手机号/E-mail可以使用"
 			ologin_form.style.height = "520px";
 			otest_number.innerHTML = parseInt((Math.random()) * 10001);
@@ -29,19 +29,30 @@ onload = function() {
 			otext_btn.style.display = "block";
 			ospan[0].style.color = "gray"
 			oinput[0].style.border = "1px solid gray"
-		}
-
-		else {
+		} else {
 			ospan[0].innerHTML = "请输入正确的手机号/E-mail！"
 			ospan[0].style.color = "red"
 			oinput[0].style.border = "1px solid red"
 		}
+		//获取cookic
+		var ousername = getCookie("ousername");
+		var obj = JSON.parse(ousername);
+		var ousername_s = oinput[0].value;
+		for(var i = 0; i < obj.length; i++) {
+			if(obj[i].ousername == ousername_s) {
+				ospan[0].innerHTML = "该手机号/E-mail已被使用！"
+				ospan[0].style.color = "red"
+				oinput[0].style.border = "1px solid red"
+			}
+			
+		}
 
 	}
-
+     //密码框得到焦点
 	oinput[1].onfocus = function() {
 		ospan[1].innerHTML = "6-16个字符，可使用字母、数字、符号任意组合";
 	}
+	 //密码框失去焦点
 	oinput[1].onblur = function() {
 		var password = this.value;
 		password = password.replace(/\s/gi, "");
@@ -70,11 +81,12 @@ onload = function() {
 		}
 
 	}
-
+     //重复密码框得到焦点
 	oinput[2].onfocus = function() {
 
 		ospan[2].innerHTML = "请再次输入您设置的密码";
 	}
+	 //重复密码框失去焦点
 	oinput[2].onblur = function() {
 		var passwords = this.value;
 		passwords = passwords.replace(/\s/gi, "");
@@ -94,7 +106,7 @@ onload = function() {
 		}
 
 	}
-
+     //图形框得到焦点
 	oinput[3].onblur = function() {
 		var test = this.value;
 		test = test.replace(/\s/gi, "");
@@ -113,7 +125,7 @@ onload = function() {
 		}
 
 	}
-
+    //点击图形验证更换
 	oinput[4].onclick = function() {
 		otest_number.innerHTML = parseInt((Math.random()) * 10001);
 		oinput[4].style.border = "1px solid white";
@@ -128,36 +140,23 @@ onload = function() {
 		ospan[4].style.color = "red"
 		oinput[5].style.border = "1px solid red"
 	}
-    
-    var json=[];
+     //获取cookie
+	var json = [];
 	obtn.onclick = function() {
-        var obj={
-        	ousername : oinput[0].value,
-        	opassword : oinput[1].value,
-        };
-        json.push(obj);
-        var jsons=JSON.stringify(json);
+		var obj = {
+			ousername: oinput[0].value,
+			opassword: oinput[1].value,
+		};
+		json.push(obj);
+		var jsons = JSON.stringify(json);
 
-			var d = new Date;
-			d.setDate(d.getDate() + 10);
-            setCookie("ousername",jsons,d);
-            console.log(getCookie("ousername"));
-            alert("注册成功");
+		var d = new Date;
+		d.setDate(d.getDate() + 10);
+		setCookie("ousername", jsons, d);
+		console.log(getCookie("ousername"));
+		alert("注册成功");
 	};
-	
-	oinput[0].onblur=function(){
-		var ousername=getCookie("ousername");
-		var obj=JSON.parse(ousername);
-		var ousername_s=oinput[0].value;
-		for(var i=0; i<obj.length; i++){
-			if(obj[i].ousername==ousername_s){
-				ospan[0].innerHTML="该手机号/E-mail已被使用！"
-				ospan[0].style.color = "red"
-			    oinput[0].style.border = "1px solid red"
-			}
-		}
-	}
-	
-	
-}
 
+
+
+}

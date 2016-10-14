@@ -42,7 +42,7 @@ jQuery(function($) {
     
     var tops = $(window).height();
 	var lefts = $(window).width();
-
+    //商品数量加减
 	$(".pro_goods_right").on("click", function() {
 		$(".pro_goodbox").show();
 		var number = $(".pro_gnum").html();
@@ -54,7 +54,7 @@ jQuery(function($) {
 		$(".car_money").html(j + $allmoney);
 
 	});
-	//X按钮
+	//隐藏购物车按钮
 	$(".no_img").on("click", function() {
 		$(".pro_goodbox").hide();
 	});
@@ -96,9 +96,7 @@ jQuery(function($) {
 	
 	
 	//购物车
-	$(".pro_goods_right").on("click",function(){
-//		var $img=$(".pro_smallimg_img").children("li").eq(1).children("img").attr();
-//		
+	$(".pro_goods_right").on("click",function(){	
 		var $title=$(".title").html();
 		var $moneys=$(".money").html()
 		var $color=$(".colors").html();

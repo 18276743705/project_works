@@ -26,7 +26,7 @@ onload = function() {
 		var gusername = this.value;
 		gusername = gusername.replace(/\s/gi, "");
 
-		if(/^1\d{10}$/.test(gusername)) {
+		if(/^1\d{10}$/.test(gusername) || /[a-z0-9A-z_]{1,}@[a-z0-9A-z_]{1,}.com$/.test(gusername) ) {
 			ospan[0].innerHTML = "";
 			oinput[0].style.border = "1px solid gray"
 			oinput[3].style.display = "block"
@@ -56,7 +56,7 @@ onload = function() {
 			oinput[1].style.border = "1px solid red"
 		}
 	}
-
+    //获取cookie
 	oregisterbtn.onclick = function() {
 		var gousername = oinput[0].value;
 		var gopassword = oinput[1].value;

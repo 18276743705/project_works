@@ -1,4 +1,5 @@
 $(function() {
+	//添加懒加载样式
 	$(function() {
 		var $list_content = $(".list_content");
 		var $ul = $("<ul/>");
@@ -36,6 +37,7 @@ $(function() {
 			}
 
 		});
+		//懒加载
 		$.ajax();
 		$(window).on("scroll", function() {
 			var scrollTop = $(window).scrollTop();

@@ -1,11 +1,12 @@
 jQuery(function() {
+	//轮播图
 	$(".banner").pcarousel({
 		type: 'x',
 		width: 1190,
 		height: 470,
 		buttons: true,
 	});
-	
+	//content_box1,centent第一部分的鼠标经过效果，切换图片
 	$(".content_box1_top").on("mouseenter", "li", function() {
 		var index = $(this).index();
 		$(".content_box1_bottom").children("li").eq(index).animate({
@@ -15,7 +16,7 @@ jQuery(function() {
 		});
 	});
 
-	//content_box2
+	//content_box2，centent第二部分的鼠标经过效果，切换图片
 	$(".content_box2_bottom_right_1").on("mouseenter", "li", function() {
 		var index = $(this).index();
 		$(".content_box2_bottom_right_2").children("li").eq(index).animate({
@@ -25,24 +26,7 @@ jQuery(function() {
 		});
 	});
 
-	//              $(".btn_left").on("click",function(){
-	//              	var len=$(".conton_box3_left_bottom_ul").children().length;
-	//              	console.log(len);
-	//              	var index=$(this).index();
-	//              	$(".conton_box3_left_bottom_ul").children("li").eq(1).animate({opacity:1}).siblings('li').animate({opacity:0});
-	//              	index++;
-	////              	if(index>)
-	////              	console.log("111");
-	//              })
-	//              
-	//              $('.conton_box3_left_bottom_ul').on("mouseenter","li",function(){
-	//              	var index=$(this).index();
-	//              	console.log(index)
-	//              })
-
-	//图片切换
-	//              $(".cen_left1").hide();
-	//              $(".cen_right1").hide();
+    
 	$(".conton_box3_center").on("mouseenter", "ul", function() {
 		$(".cen_left1").show();
 		$(".cen_right1").show();
