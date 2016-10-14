@@ -1,0 +1,66 @@
+body{background: #eeeeee;}
+.footer_gcolor{width: 100%;background: white;margin-top: 20px;}
+.goods_logo{width: 100%;background: white;padding: 20px 50px;}
+.goods_logo span{margin: 0 auto;width: 1190px;padding-right: 59px;}
+.goodsum{width: 980px;margin: 0 auto;margin-top: 20px;padding: 10px;background:white;}
+.step{overflow: hidden;}
+.step h2{width: 112px;background: url(../img/goods/head.jpg) no-repeat left top;height: 80px;display: inline-block;}
+.sp-step{padding-top: 3px;float: right; margin-right: 10px; display: inline-block;height: 50px;background: url(../img/goods/head.jpg) no-repeat -158px 5px;}
+.sp-step span{float: left;vertical-align: top;text-align: center;color: #999;font-size: 14px;}
+.sp-step .step1{color: #e4004d;width: 76px;background: url(../img/goods/head.jpg) no-repeat -158px -52px;}
+.sp-step i{display: block; padding-top: 20px;text-align: center;font-size: 10px;font-style: normal;}
+.sp-step .step1 i{padding-top: 18px;}
+.sp-step .step2{width: 402px;}
+.sp-step .step3{width: 60px;}
+
+.contain_top{background: #666;height: 30px;color: #fff;line-height: 30px; text-align: left;font-weight: bold;}
+.contain_top li{float: left;}
+.check{width: 103px;padding-left: 27px;}
+.check input{float: left;margin-top: 10px;}
+.products{width: 372px;}
+._price{width: 130px;}
+.amount{width: 66px;padding-right: 60px;text-align: center;overflow: hidden;}
+.sums{width: 90px;}
+._active{width: 92px;}
+.no_officel{height: 30px;line-height: 30px;border: 1px solid #e2e2e2;border-bottom: none;background: #eee;padding-left: 10px;font-weight: bold;}
+
+.list{background: #f9f9f9;border: 1px solid #e2e2e2;}
+.list p{display: inline-block;height: 72px;float: left;}
+.list li{padding-top: 15px;height: 72px;overflow: hidden;border-bottom: 1px solid #e2e2e2;}
+.list .check {width: 40px;}
+.list .products{width: 435px;}
+.products img{ width: 45px;height: 60px;margin-right: 10px;border: 1px solid #efefef;float: left;}
+.products span{width: 300px;display: inline-block;float: left;}
+.products .tle{line-height: 18px;color: #333333;}
+.products ._color{height: 22px;line-height: 22px;color: #999;}
+.list ._price{margin-top: 11px;color: #e5004f;font-weight: 700;overflow: hidden;}
+._price i{background: url(shopping-icon.png) no-repeat 0 -177px;display: inline-block;width: 55px;height: 16px;float: right;margin-right: 30px;font-style: normal;color: #fff;line-height: 16px;padding-left: 5px;}
+.list li .amount,.list .sums,.list{margin-top: 10px;}
+.amount{text-align: center;line-height: 22px;}
+.amount span{float: left;border: 1px solid #dfdfdf;width: 14px;height: 22px;line-height: 22px;background: #eee;}
+.amount .numbers{float: left;width: 30px;height: 22px;line-height: 22px;text-align: center;border:  1px solid #ccc;color: #666;background: white;}
+.no_officel span{width: 92px;padding-left: 16px;background: url(../img/goods/icon.png) no-repeat 0 -87px;cursor: pointer;color: gray;}
+.no_officel{background: #f9f9f9;border: none;}
+.no_officel span:hover{color: #e4004d;}
+.no_officel .delete{background: url(../img/goods/icon.png) no-repeat 0 -120px;}
+
+.pay{background: #eee;margin: 10px 0;padding: 15px 20px 5px;border:  1px solid #ccc;overflow: hidden;border-bottom: 2px solid #ccc;color: gray;}
+.pay_left{line-height: 24px;}
+.pay_left span{cursor: pointer;float: left;margin-left: 10px;}
+.pay_left span:hover{color: #e4004d;}
+.pay_left input{float: left;margin-top: 6px;float: left;}
+.pay_left  .free{float: right;padding: 0px 6px 0px 21px;font-size: 14px;font-weight: 700;background: url(../img/goods/icon.png) no-repeat 0 -299px;}
+.pay_left .free:hover{color: #666;}
+.pay_left .cue{float: right;}
+.total{float: right;height: 24px;line-height: 24px;padding-right: 6px;font-size: 14px;padding-bottom: 15px;border-bottom: 1px solid #d2d2d2;width: 100%;}
+.total span{float:right ;}
+.total b{color: #e4004d;}
+.math{padding: 0 5px;color: #bfbebe;}
+.num{font-weight: bold;color: #e5004f;}
+
+.payall{height: 42px;padding: 8px 26px 15px;width: 886px;overflow: hidden;}
+.payall p{float: right;height: 42px;line-height: 42px;font-size: 14px;font-weight: 700;color: #333;}
+.payall .cue{font-size: 12px;font-weight: 400;margin-left: -5px;font-style: normal;color: #666;}
+.payall .mon{padding: 0 5px;font-size: 16px;color: #e5004f;}
+.payall input{float: right;  width: 143px; height: 38px;background: url(../img/goods/sub.png) no-repeat left top;cursor: pointer;line-height: 50em;margin-left: 20px;}
+.payall input:hover{background: url(../img/goods/sub.png) no-repeat -147px 0;}

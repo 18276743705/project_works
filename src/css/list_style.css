@@ -1,5 +1,7 @@
 body{background: #eeeeee;}
+.list_footer{100%;background: white;}
 .head_nav{background: white;}
+.list_content{width: 1190px;margin: 0 auto;}
 .foot_footer{background: white;}
 .list_content{overflow: hidden;margin-left: 59px;}
 .list_content{margin-top: 20px;}

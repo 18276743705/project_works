@@ -1,9 +1,11 @@
-.login_top{width: 100%;background: white;overflow: hidden;padding-bottom: 20px;}
-.login_top .login_top_logo{float: left;margin-top: 22px;margin-left: 40px;}
+.login_p{width: 100%;}
+.login_top{width: 1190px;margin: 0 auto;background: white;overflow: hidden;padding-bottom: 20px;}
+.login_top .login_top_logo{float: left;margin-top: 22px;}
 .login_top h3{color: #C91256;font-size: 22px;float: left;margin-top: 74px;}
-.login_box{width: 100%;background: gainsboro;overflow: hidden;padding: 60px 0px;}
-.login_box_img{float: left;margin-left: 40px;}
-.login_form{width: 320px;height: 460px;background: white;float: right;margin-right: 40px;}
+.login_center{width: 100%;background: gainsboro;}
+.login_box{overflow: hidden;padding: 60px 0px;width: 1190px;margin: 0 auto;}
+.login_box_img{float: left;}
+.login_form{width: 320px;height: 460px;background: white;float: right;}
 .login_form_top{width: 320px;height: 44px;font-size: 16px;text-align: center;line-height: 44px;background: #C91256;color: white;font-weight: bold;}
 .login{padding: 0px 20px;width: 280px;overflow: hidden;}
 .login_form_gin{float: right;margin: 19px 20px;color: gray;}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/good.css" />
+		<script type="text/javascript" src="../js/jquery-1.12.0.js" ></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../js/good.js" ></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="header_left">
+				<li class="header_left_1">
+					<a href="#">银泰首页</a>
+				</li>
+				<li class="header_left_2"></li>
+				<li class="header_left_3">
+					<a href="#">微信</a>
+				</li>
+				<li class="header_left_4"></li>
+				<li class="header_left_5">
+					<a href="#">手机银泰</a>
+				</li>
+			</ul>
+
+			<ul class="header_right">
+				<li class="header_right_1"><span>Hi,欢迎来到银泰网！</span>
+					<a href="register.html">登录</a>
+					<a href="login.html">注册</a>
+				</li>
+				<li class="header_right_2"></li>
+				<li class="header_right_3">
+					<a href="#">我的订单</a>
+
+				</li>
+				<li class="header_right_4"></li>
+				<li class="header_right_5">
+					<a href="#">我的银泰</a><span></span></li>
+				<li class="header_right_6"></li>
+				<li class="header_right_7">
+					<a href="#">银泰卡</a>
+				</li>
+				<li class="header_right_8"></li>
+				<li class="header_right_9">
+					<a href="#">帮助中心</a>
+				</li>
+			</ul>
+
+			<div class="wechat">
+				<p class="header_left_3"><span>微信</span></p>
+				<img src="../img/top/wechat.png" />
+			</div>
+
+			<div class="appphone">
+				<p class="header_left_5"><span>手机银泰</span></p>
+				<img src="../img/top/appphone.png" />
+			</div>
+
+			<ul class="mylist">
+				<li class="mylist_top">我的银泰</li>
+				<li>我的收藏</li>
+				<li>我的余额</li>
+				<li>我的银元</li>
+				<li>我的银泰卡</li>
+				<li>我的优惠卷</li>
+				<li>我的积分</li>
+			</ul>
+		</div>
+		<!---------------------------goods------------------------------>
+		<div class="goods_logo">
+			<span>
+					<img src="../img/goods/logo.gif" />
+				</span>
+		</div>
+		<div class="goodsum">
+			<div class="step">
+				<h2></h2>
+				<div class="sp-step">
+					<span class="step1">查看购物袋<i>STEP 1</i></span>
+					<span class="step2">填写订单信息<i>STEP 2</i></span>
+					<span class="step3">订单确认<i>STEP 3</i></span>
+				</div>
+
+				<div class="contain">
+					<ul class="contain_top">
+						<li class="check">
+							<input type="checkbox" id="all">
+							<label for="all">&nbsp;全选</label>
+						</li>
+						<li class="products">商品</li>
+						<li class="_price">单价</li>
+						<li class="amount">数量</li>
+						<li class="sums">获得积分</li>
+						<li class="_active">操作</li>
+					</ul>
+					<div class="no_officel">普通商品</div>
+
+					<ul class="list">
+						<li>
+							<p class="check">
+								<input type="checkbox" id="checks"/>
+							</p>
+							<p class="products">
+								<img src="../img/goods/1(1).jpg" />
+								<span class="tle">OMTO FEGER斐格 男士胸包 韩版单肩斜挎包腰包户外出游小包时尚休闲情侣包包</span>
+								<span class="_color">颜色：蓝色尺寸：300*188*75mm</span>
+							</p>
+							<p class="_price">&yen;159<i>2.3折</i></p>
+							<p class="amount">
+								<span class="cut">-</span>
+								<span class="numbers">1</span>
+								<span class="add">+</span>
+							</p>
+							<p class="sums">298</p>
+							<p class="no_officel">
+								<span class="remove">移入收藏</span>
+								<span class="delete">删除商品</span>
+							</p>
+						</li>
+					</ul>
+
+					<div class="pay">
+						<div class="pay_left">
+							<span><input type="checkbox" id="all1" /><label for="all1">全选</label></span>
+							<span>删除选中的商品</span>
+							<span>继续购物</span>
+							<span class="free">该订单已满199元，运费已免</span>
+						</div>
+						<div class="total">
+							<span>商品总价：<b>&yen;</b><b class="num">298</b></span>
+							<span class="math">-</span>
+							<span>节省金额：<b>&yen;</b><b class="num">0</b></span>
+							<span class="math">+</span>
+							<span>运费：<b>&yen;</b><b class="num">0</b></span>
+							<span class="math">=</span>
+							<span>结算金额：<b>&yen;</b><b class="num">298</b></span>
+						</div>
+						<div class="payall">
+							<p>结算金额：
+								<i class="cue">(已免运费)</i>
+								<b class="mon">¥298</b>
+								<input type="submit" value="结算">
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!---------------------------foot-------------------------------->
+
+		<div class="footer_gcolor">
+			<div class="footer">
+				<ul class="footer_top">
+					<li>
+						<a href="#">关于银泰</a>
+					</li>
+					<li class="footer_top_1"></li>
+					<li>
+						<a href="#">帮助中心</a>
+					</li>
+					<li class="footer_top_1"></li>
+					<li>
+						<a href="#">退换货政策</a>
+					</li>
+					<li class="footer_top_1"></li>
+					<li>
+						<a href="#">网站地址</a>
+					</li>
+					<li class="footer_top_1"></li>
+					<li>
+						<a href="#">代理合作</a>
+					</li>
+					<li class="footer_top_1"></li>
+					<li>
+						<a href="#">品牌招商</a>
+					</li>
+					<li class="footer_top_1"></li>
+					<li>
+						<a href="#">商务合作</a>
+					</li>
+					<li class="footer_top_1"></li>
+					<li>
+						<a href="#">网站联盟</a>
+					</li>
+					<li class="footer_top_1"></li>
+					<li>
+						<a href="#">联系我们</a>
+					</li>
+					<li class="footer_top_1"></li>
+					<li>
+						<a href="#">加入银泰</a>
+					</li>
+					<li class="footer_top_1"></li>
+					<li>
+						<a href="#">版权声明</a>
+					</li>
+					<li class="footer_top_1"></li>
+					<li>
+						<a href="#">法律声明</a>
+					</li>
+				</ul>
+				<p>浙ICP备10200233号&nbsp;京公网安备110105019085&nbsp; 增值电信业务经营许可证：浙B2-20110005</p>
+				<p>Yintai&nbsp;&copy;&nbsp;2016, 银泰电子商务有限公司</p>
+
+				<ul class="footer_bottom">
+					<li class="footer_bottom_1">
+						<a href="#"><img src="../img/bottom/yt-ntegrity.png" /></a>
+					</li>
+					<li class="footer_bottom_1">
+						<a href="#"><img src="../img/bottom/cnnic.png" /></a>
+					</li>
+					<li class="footer_bottom_2">
+						<a href="#"><img src="../img/bottom/commerce.gif" /></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</body>
+
+</html>

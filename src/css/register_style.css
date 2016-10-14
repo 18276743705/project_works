@@ -1,9 +1,13 @@
-.register_top{width: 100%;background: white;overflow: hidden;padding-bottom: 20px;}
-.register_top .register_top_logo{float: left;margin-top: 22px;margin-left: 40px;}
+body{background:gainsboro ;}
+.footer_color{width: 100%;background: white;}
+.register_p{width: 100%;background: white;}
+.register_top{width: 1190px;margin: 0 auto;background: white;overflow: hidden;padding-bottom: 20px;}
+.register_top .register_top_logo{float: left;margin-top: 22px;}
+.register_center{width: 1190px;margin: 0 auto;}
 .register_top h3{color: #C91256;font-size: 22px;float: left;margin-top: 74px;}
 .register_box{width: 100%;background: gainsboro;overflow: hidden;padding: 60px 0px;}
-.register_box_img{float: left;margin-left: 40px;}
-.register_form{width: 320px;height: 460px;background: white;float: right;margin-right: 40px;}
+.register_box_img{float: left;}
+.register_form{width: 320px;height: 460px;background: white;float: right;}
 .register_form_nav{width: 320px;height: 44px;font-size: 16px;line-height: 44px;color: gray;font-weight: bold;/*overflow: hidden*/;border-bottom: 1px solid grey;position: relative;}
 .register_form_nav span{width: 160px;height: 44px;text-align: center;float: left;}
 .register_form_top1{background: #C91256;color: white;}
@@ -44,3 +48,6 @@
 .img_2{position: absolute;right: 0;top: 0;display: none;}
 .img_1{position:absolute;top: 24px;left: 70px;}
 .register_right_btoom{color: #C91256;line-height: 18px;border: 1px solid #C91256;width: 145px;text-align: center;margin-left: 58px;}
+
+
+
